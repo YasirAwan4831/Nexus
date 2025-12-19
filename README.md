@@ -8,3 +8,7 @@
   - assets/ → Images and static files  
 
 This project follows a modular React architecture for scalability and maintainability.
+
+
+## UI Theme
+Consistent UI theme implemented using Tailwind CSS with custom color palette and typography.
