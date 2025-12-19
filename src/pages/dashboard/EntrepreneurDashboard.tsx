@@ -69,6 +69,20 @@ export const EntrepreneurDashboard: React.FC = () => {
           </CardBody>
         </Card>
         
+        <Card>
+  <CardHeader>
+    <h2 className="text-lg font-medium text-gray-900">Meeting Calendar</h2>
+  </CardHeader>
+  <CardBody>
+    <MeetingCalendar />
+  </CardBody>
+</Card>
+
+
+
+
+
+
         <Card className="bg-secondary-50 border border-secondary-100">
           <CardBody>
             <div className="flex items-center">
@@ -172,3 +186,5 @@ export const EntrepreneurDashboard: React.FC = () => {
     </div>
   );
 };
+
+import MeetingCalendar from '../../components/calendar/MeetingCalendar';
