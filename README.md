@@ -10,5 +10,37 @@
 This project follows a modular React architecture for scalability and maintainability.
 
 
-## UI Theme
-Consistent UI theme implemented using Tailwind CSS with custom color palette and typography.
+## Week 1 – Scheduling & Setup (Completed)
+
+### UI Theme Setup
+A consistent UI theme has been implemented using Tailwind CSS.  
+The project uses a unified color palette (Primary, Secondary, Accent) and typography to ensure visual consistency across the platform.
+
+📸 Screenshot: UI theme and dashboard layout  
+<!-- Screenshot here -->
+
+---
+
+### Meeting Scheduling Calendar
+A meeting scheduling calendar has been integrated using FullCalendar.  
+This calendar allows entrepreneurs to visually view scheduled meetings and upcoming discussions.
+
+Key highlights:
+- Monthly calendar view
+- Clean and responsive UI
+- Ready for future availability and booking logic
+
+📸 Screenshot: Calendar integrated into Entrepreneur Dashboard  
+![Add Calendar](screeenshort/add-calendar.jpg)
+
+---
+
+### Sample Meetings (Demo Events)
+Dummy meetings have been added to demonstrate calendar functionality:
+- Investor Meeting – 20 Dec
+- Pitch Discussion – 22 Dec
+- Follow-up Call – 25 Dec
+
+📸 Screenshot: Calendar with sample meeting events  
+![Meeting Events](screeenshort/meeting-events-calander-2.jpg)
+
