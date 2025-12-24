@@ -58,3 +58,7 @@ Features included:
 - End call button
 - Clean and minimal UI for demo purposes
 
+**Screenshot:** Full page dashboard with video call section  ![Full page dashboard with video call section ](screeenshort/video-call02.png)
+
+**Screenshot:** Video calling mock interface  
+![Video calling mock interface ](screeenshort/video-call01.png)
