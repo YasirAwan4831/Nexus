@@ -71,5 +71,23 @@ The interface includes document listing, upload button (mock), and status labels
 **📸 Screenshot:** Document Chamber UI  
 ![Document Chamber UI   ](screeenshort/document-uplode01.png)
 
+
+##  Week 2 Completed – UI Enhancements & Features
+
+**Status:** Completed successfully
+
+In Week 2, key UI features were implemented and integrated smoothly into the Nexus project. The focus was on improving usability, visual consistency and core dashboard functionality.
+
+### Highlights:
+
+*  **Calendar Dashboard** integrated and displayed correctly
+*  **Video Call Mock UI** added for meeting simulation
+*  **Document Chamber UI** implemented for managing startup documents
+*  **Consistent color theme & layout** applied across new components
+
+All features were tested locally, screenshots were captured and changes were pushed to GitHub.
+
+ *Week 2 tasks are fully completed and ready for review.*
+
 ![Week 2 Complete](https://img.shields.io/badge/Week%202-COMPLETE%20(UI%20Level)-brightgreen?style=for-the-badge)
 
