@@ -30,7 +30,7 @@ Key highlights:
 - Clean and responsive UI
 - Ready for future availability and booking logic
 
-📸 Screenshot: Calendar integrated into Entrepreneur Dashboard  
+**📸 Screenshot:** Calendar integrated into Entrepreneur Dashboard  
 ![Add Calendar](screeenshort/add-calendar.jpg)
 
 ---
@@ -41,6 +41,20 @@ Dummy meetings have been added to demonstrate calendar functionality:
 - Pitch Discussion – 22 Dec
 - Follow-up Call – 25 Dec
 
-📸 Screenshot: Calendar with sample meeting events  
+**📸 Screenshot:** Calendar with sample meeting events  
 ![Meeting Events](screeenshort/meeting-events-calander-2.jpg)
+
+-------------
+
+## Week 2 – Video Calling & Collaboration (In Progress)
+
+### Video Calling UI (Mock)
+A video calling interface has been added as a frontend mock to demonstrate real-time collaboration capabilities between investors and entrepreneurs.
+
+Features included:
+- Video call screen layout
+- Mic on/off toggle
+- Video on/off toggle
+- End call button
+- Clean and minimal UI for demo purposes
 
