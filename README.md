@@ -71,4 +71,5 @@ The interface includes document listing, upload button (mock), and status labels
 **📸 Screenshot:** Document Chamber UI  
 ![Document Chamber UI   ](screeenshort/document-uplode01.png)
 
+![Week 2 Complete](https://img.shields.io/badge/Week%202-COMPLETE%20(UI%20Level)-brightgreen?style=for-the-badge)
 
