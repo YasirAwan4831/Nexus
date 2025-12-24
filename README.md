@@ -44,7 +44,22 @@ Dummy meetings have been added to demonstrate calendar functionality:
 **📸 Screenshot:** Calendar with sample meeting events  
 ![Meeting Events](screeenshort/meeting-events-calander-2.jpg)
 
+
+## 🗓️ Week 1 – Scheduling & Setup (Summary)
+
+In Week 1, the foundation of the project was established with a strong focus on UI setup and meeting scheduling functionality. A consistent and scalable UI theme was implemented using Tailwind CSS, ensuring uniform colors, typography and layout across the application. This provided a solid visual base for future feature development.
+
+The core highlight of this week was the integration of a meeting scheduling calendar into the Entrepreneur Dashboard. Using a clean and responsive calendar UI, entrepreneurs can visually track meetings and discussions. Demo meeting events were added to showcase functionality and simulate real-world usage scenarios, making the feature easy to understand and review.
+
+Overall, Week 1 successfully laid down the structural and visual groundwork of the application, preparing the platform for advanced collaboration features in the upcoming phases.
+
+![Week 1 Complete](https://img.shields.io/badge/Week%201-COMPLETE%20(UI%20Level)-brightgreen?style=for-the-badge)
+
+
 -------------
+
+
+
 
 ## Week 2 – Video Calling & Collaboration (In Progress)
 
