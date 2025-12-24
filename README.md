@@ -62,3 +62,13 @@ Features included:
 
 **Screenshot:** Video calling mock interface  
 ![Video calling mock interface ](screeenshort/video-call01.png)
+
+---------------
+### Document Chamber (Mock)
+A document chamber UI has been added to manage deal-related files such as proposals and agreements.  
+The interface includes document listing, upload button (mock), and status labels like Draft, In Review and Signed.
+
+**📸 Screenshot:** Document Chamber UI  
+![Document Chamber UI   ](screeenshort/document-uplode01.png)
+
+
