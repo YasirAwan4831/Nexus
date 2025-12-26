@@ -78,6 +78,33 @@ export const PaymentsPage: React.FC = () => {
         </Card>
       </div>
 
+      {/* Payment Actions */}
+<Card>
+  <CardHeader>
+    <h2 className="text-lg font-medium text-gray-900">Quick Actions</h2>
+  </CardHeader>
+  <CardBody>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <Button variant="primary">
+        Deposit
+      </Button>
+
+      <Button variant="outline">
+        Withdraw
+      </Button>
+
+      <Button variant="outline">
+        Transfer
+      </Button>
+    </div>
+
+    <p className="mt-4 text-sm text-gray-500">
+      * This is a mock payment system for demonstration purposes only.
+    </p>
+  </CardBody>
+</Card>
+
+
       {/* Transactions */}
       <Card>
         <CardHeader>
@@ -115,3 +142,5 @@ export const PaymentsPage: React.FC = () => {
     </div>
   );
 };
+
+

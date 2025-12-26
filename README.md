@@ -143,7 +143,7 @@ This module allows users to view and interact with a clean, user-friendly paymen
 
 ---
 
-###  Status
+### 📅 Status
 ✅ Payment UI created  
 ✅ Routing configured  
 ✅ Screenshots documented  
