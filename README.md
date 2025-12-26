@@ -106,3 +106,48 @@ All features were tested locally, screenshots were captured and changes were pus
 
 ![Week 2 Complete](https://img.shields.io/badge/Week%202-COMPLETE%20(UI%20Level)-brightgreen?style=for-the-badge)
 
+##  Week 3 – Payment UI & Transactions (In Progress)
+
+###  Overview
+In Week 3, the focus is on implementing the **Payment UI** for the Nexus Platform.  
+This module allows users to view and interact with a clean, user-friendly payment interface, preparing the system for future payment integrations.
+
+---
+
+### 💳 Payment UI Features
+- Dedicated **Payments page** accessible from the sidebar
+- Card-based payment layout (UI mock)
+- Consistent design using Tailwind CSS theme
+- Fully responsive layout inside Dashboard
+
+---
+
+###  Implementation Details
+- New Payments page created and connected via routing
+- Sidebar navigation updated to include Payments
+- Dashboard layout reused for consistency
+- UI prepared for future backend/payment gateway integration
+
+---
+
+### 📸 Screenshots
+> Below screenshots demonstrate the completed Payment UI setup:
+
+- **Payment Card UI / Slide**  
+  ![Payment Card](./screeenshort/payment-slide-bar.png)
+
+- **Payment Page – Full View**  
+  ![Payment Page Full](./screeenshort/payment-page-full.png)
+
+
+
+---
+
+###  Status
+✅ Payment UI created  
+✅ Routing configured  
+✅ Screenshots documented  
+
+⏳ Next: Payment flow logic & enhancements
+
+---
