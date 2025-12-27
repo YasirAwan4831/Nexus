@@ -45,23 +45,49 @@ const deals = [
     status: 'Negotiation',
     stage: 'Pre-seed',
     lastActivity: '2024-02-05'
+  },
+
+  // ✅ Investor sent offer (Entrepreneur view)
+  {
+    id: 4,
+    startup: {
+      name: 'Your Startup',
+      logo: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
+      industry: 'SaaS'
+    },
+    amount: '$250K',
+    equity: '8%',
+    status: 'Offer Received',
+    stage: 'Seed',
+    lastActivity: '2024-03-01',
+    investor: {
+      name: 'John Carter',
+      message: 'Interested in funding your startup. Let’s discuss.'
+    }
   }
 ];
 
 export const DealsPage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedStatus, setSelectedStatus] = useState<string[]>([]);
-  
-  const statuses = ['Due Diligence', 'Term Sheet', 'Negotiation', 'Closed', 'Passed'];
-  
+
+  const statuses = [
+    'Due Diligence',
+    'Term Sheet',
+    'Negotiation',
+    'Offer Received',
+    'Closed',
+    'Passed'
+  ];
+
   const toggleStatus = (status: string) => {
-    setSelectedStatus(prev => 
+    setSelectedStatus(prev =>
       prev.includes(status)
         ? prev.filter(s => s !== status)
         : [...prev, status]
     );
   };
-  
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'Due Diligence':
@@ -70,6 +96,8 @@ export const DealsPage: React.FC = () => {
         return 'secondary';
       case 'Negotiation':
         return 'accent';
+      case 'Offer Received':
+        return 'warning';
       case 'Closed':
         return 'success';
       case 'Passed':
@@ -78,7 +106,7 @@ export const DealsPage: React.FC = () => {
         return 'gray';
     }
   };
-  
+
   return (
     <div className="space-y-6 animate-fade-in">
       <div className="flex justify-between items-center">
@@ -86,12 +114,10 @@ export const DealsPage: React.FC = () => {
           <h1 className="text-2xl font-bold text-gray-900">Investment Deals</h1>
           <p className="text-gray-600">Track and manage your investment pipeline</p>
         </div>
-        
-        <Button>
-          Add Deal
-        </Button>
+
+        <Button>Add Deal</Button>
       </div>
-      
+
       {/* Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         <Card>
@@ -107,7 +133,7 @@ export const DealsPage: React.FC = () => {
             </div>
           </CardBody>
         </Card>
-        
+
         <Card>
           <CardBody>
             <div className="flex items-center">
@@ -121,7 +147,7 @@ export const DealsPage: React.FC = () => {
             </div>
           </CardBody>
         </Card>
-        
+
         <Card>
           <CardBody>
             <div className="flex items-center">
@@ -135,7 +161,7 @@ export const DealsPage: React.FC = () => {
             </div>
           </CardBody>
         </Card>
-        
+
         <Card>
           <CardBody>
             <div className="flex items-center">
@@ -150,7 +176,7 @@ export const DealsPage: React.FC = () => {
           </CardBody>
         </Card>
       </div>
-      
+
       {/* Filters */}
       <div className="flex flex-col md:flex-row gap-4">
         <div className="w-full md:w-2/3">
@@ -162,7 +188,8 @@ export const DealsPage: React.FC = () => {
             fullWidth
           />
         </div>
-        
+
+
         <div className="w-full md:w-1/3">
           <div className="flex items-center gap-2">
             <Filter size={18} className="text-gray-500" />
@@ -181,8 +208,8 @@ export const DealsPage: React.FC = () => {
           </div>
         </div>
       </div>
-      
-      {/* Deals table */}
+
+      {/* Deals Table */}
       <Card>
         <CardHeader>
           <h2 className="text-lg font-medium text-gray-900">Active Deals</h2>
@@ -192,73 +219,38 @@ export const DealsPage: React.FC = () => {
             <table className="w-full">
               <thead>
                 <tr className="border-b border-gray-200">
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Startup
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Amount
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Equity
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Status
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Stage
-                  </th>
-                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Last Activity
-                  </th>
-                  <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
-                    Actions
-                  </th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Startup</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Amount</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Equity</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Stage</th>
+                  <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Last Activity</th>
+                  <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase">Actions</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 {deals.map(deal => (
                   <tr key={deal.id} className="hover:bg-gray-50">
-                    <td className="px-6 py-4 whitespace-nowrap">
+                    <td className="px-6 py-4">
                       <div className="flex items-center">
-                        <Avatar
-                          src={deal.startup.logo}
-                          alt={deal.startup.name}
-                          size="sm"
-                          className="flex-shrink-0"
-                        />
+                        <Avatar src={deal.startup.logo} alt={deal.startup.name} size="sm" />
                         <div className="ml-4">
-                          <div className="text-sm font-medium text-gray-900">
-                            {deal.startup.name}
-                          </div>
-                          <div className="text-sm text-gray-500">
-                            {deal.startup.industry}
-                          </div>
+                          <div className="text-sm font-medium text-gray-900">{deal.startup.name}</div>
+                          <div className="text-sm text-gray-500">{deal.startup.industry}</div>
                         </div>
                       </div>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-sm text-gray-900">{deal.amount}</div>
+                    <td className="px-6 py-4">{deal.amount}</td>
+                    <td className="px-6 py-4">{deal.equity}</td>
+                    <td className="px-6 py-4">
+                      <Badge variant={getStatusColor(deal.status)}>{deal.status}</Badge>
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-sm text-gray-900">{deal.equity}</div>
+                    <td className="px-6 py-4">{deal.stage}</td>
+                    <td className="px-6 py-4">
+                      {new Date(deal.lastActivity).toLocaleDateString()}
                     </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <Badge variant={getStatusColor(deal.status)}>
-                        {deal.status}
-                      </Badge>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-sm text-gray-900">{deal.stage}</div>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap">
-                      <div className="text-sm text-gray-500">
-                        {new Date(deal.lastActivity).toLocaleDateString()}
-                      </div>
-                    </td>
-                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                      <Button variant="outline" size="sm">
-                        View Details
-                      </Button>
+                    <td className="px-6 py-4 text-right">
+                      <Button variant="outline" size="sm">View Details</Button>
                     </td>
                   </tr>
                 ))}

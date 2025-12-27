@@ -14,26 +14,27 @@ interface InvestorCardProps {
 
 export const InvestorCard: React.FC<InvestorCardProps> = ({
   investor,
-  showActions = true
+  showActions = true,
 }) => {
   const navigate = useNavigate();
-  
+
   const handleViewProfile = () => {
     navigate(`/profile/investor/${investor.id}`);
   };
-  
+
   const handleMessage = (e: React.MouseEvent) => {
-    e.stopPropagation(); // Prevent card click
+    e.stopPropagation();
     navigate(`/chat/${investor.id}`);
   };
-  
+
   return (
-    <Card 
-      hoverable 
+    <Card
+      hoverable
       className="transition-all duration-300 h-full"
       onClick={handleViewProfile}
     >
       <CardBody className="flex flex-col">
+        {/* Header */}
         <div className="flex items-start">
           <Avatar
             src={investor.avatarUrl}
@@ -42,40 +43,77 @@ export const InvestorCard: React.FC<InvestorCardProps> = ({
             status={investor.isOnline ? 'online' : 'offline'}
             className="mr-4"
           />
-          
+
           <div className="flex-1">
-            <h3 className="text-lg font-semibold text-gray-900 mb-1">{investor.name}</h3>
-            <p className="text-sm text-gray-500 mb-2">Investor • {investor.totalInvestments} investments</p>
-            
+            <h3 className="text-lg font-semibold text-gray-900 mb-1">
+              {investor.name}
+            </h3>
+            <p className="text-sm text-gray-500 mb-2">
+              Investor • {investor.totalInvestments} investments
+            </p>
+
             <div className="flex flex-wrap gap-2 mb-3">
               {investor.investmentStage.map((stage, index) => (
-                <Badge key={index} variant="secondary" size="sm">{stage}</Badge>
+                <Badge key={index} variant="secondary" size="sm">
+                  {stage}
+                </Badge>
               ))}
             </div>
           </div>
         </div>
-        
+
+        {/* Interests */}
         <div className="mt-3">
-          <h4 className="text-sm font-medium text-gray-900 mb-1">Investment Interests</h4>
+          <h4 className="text-sm font-medium text-gray-900 mb-1">
+            Investment Interests
+          </h4>
           <div className="flex flex-wrap gap-2">
             {investor.investmentInterests.map((interest, index) => (
-              <Badge key={index} variant="primary" size="sm">{interest}</Badge>
+              <Badge key={index} variant="primary" size="sm">
+                {interest}
+              </Badge>
             ))}
           </div>
         </div>
-        
+
+        {/* Bio */}
         <div className="mt-4">
-          <p className="text-sm text-gray-600 line-clamp-2">{investor.bio}</p>
+          <p className="text-sm text-gray-600 line-clamp-2">
+            {investor.bio}
+          </p>
         </div>
-        
-        <div className="mt-3 flex justify-between items-center">
-          <div>
-            <span className="text-xs text-gray-500">Investment Range</span>
-            <p className="text-sm font-medium text-gray-900">{investor.minimumInvestment} - {investor.maximumInvestment}</p>
-          </div>
+
+        {/* Range */}
+        <div className="mt-3">
+          <span className="text-xs text-gray-500">Investment Range</span>
+          <p className="text-sm font-medium text-gray-900">
+            {investor.minimumInvestment} - {investor.maximumInvestment}
+          </p>
+        </div>
+
+        {/*  Funding Offer UI (Mock) */}
+        <div
+          className="mt-4 space-y-2"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <input
+            type="number"
+            placeholder="Funding Amount (USD)"
+            className="w-full px-3 py-2 border rounded-md text-sm"
+          />
+
+          <textarea
+            placeholder="Message (optional)"
+            className="w-full px-3 py-2 border rounded-md text-sm"
+            rows={2}
+          />
+
+          <Button size="sm" className="w-full">
+            Send Funding Offer
+          </Button>
         </div>
       </CardBody>
-      
+
       {showActions && (
         <CardFooter className="border-t border-gray-100 bg-gray-50 flex justify-between">
           <Button
@@ -86,7 +124,7 @@ export const InvestorCard: React.FC<InvestorCardProps> = ({
           >
             Message
           </Button>
-          
+
           <Button
             variant="primary"
             size="sm"

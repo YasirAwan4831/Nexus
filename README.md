@@ -170,3 +170,36 @@ These actions are UI simulations representing common financial operations.
   ![Transfer UI](./screeenshort/transactions-list3.png)
 
 ---
+
+## 📸  Screenshots
+
+Below are the key screenshots demonstrating the completed features:
+
+
+
+Funding Offer Form (Investor Side)
+
+
+## 🤝 Funding Deal – Investor → Entrepreneur (Mock Flow)
+
+The following screenshots demonstrate the mock funding deal flow from an investor to an entrepreneur.
+This completes the simulated investment lifecycle on the platform.
+
+Entrepreneur Dashboard – Funding Request View
+Shows pending funding requests received from investors on the entrepreneur dashboard.
+
+
+
+Funding Offer Card (Zoomed View)
+Displays an individual funding offer card with Pending status and available actions.
+
+
+
+Send Funding Offer Section (Investor Side)
+Investor can enter funding amount, add an optional message and send a funding offer.
+
+
+
+📝 Summary
+Entrepreneurs can view funding offers sent by investors and take action (Accept / Decline).
+This completes the mock funding deal flow between Investor and Entrepreneur.
