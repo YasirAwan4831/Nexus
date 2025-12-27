@@ -175,7 +175,8 @@ These actions are UI simulations representing common financial operations.
 
 Below are the key screenshots demonstrating the completed features:
 
-
+Entrepreneur Dashboard – Funding Request View
+![Funding Request View UI](./screeenshort/yasir001.png)
 
 Funding Offer Form (Investor Side)
 
