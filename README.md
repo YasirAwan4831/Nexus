@@ -150,3 +150,23 @@ This module allows users to view and interact with a clean, user-friendly paymen
 
 ⏳ Next: Payment flow logic & enhancements
 
+### 💼 Payment Actions (Deposit / Withdraw / Transfer)
+
+The following screenshots demonstrate the **mock payment actions** implemented as part of the Payment UI.  
+These actions are UI-based simulations designed to represent real-world payment workflows.
+
+- **Wallet Overview & Add Payment (Mock UI)**  
+  Displays the wallet balance with an option to add funds.
+This screen provides a quick overview of available payment balance inside the wallet.  
+  ![Deposit UI](./screeenshort/add-%20banlace-payment.png)
+
+- **Payment Actions: Deposit / Withdraw / Transfer (Mock UI)**  
+  Shows available payment actions including deposit, withdraw and transfer.
+These actions are UI simulations representing common financial operations.
+  ![Withdraw UI](./screeenshort/d-w-t-ss0.png)
+
+- **Recent Transactions List (Mock UI)**  
+  Represents transferring funds between users within the platform (UI mock).  
+  ![Transfer UI](./screeenshort/transactions-list3.png)
+
+---
