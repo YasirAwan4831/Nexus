@@ -207,3 +207,19 @@ Investor can enter funding amount, add an optional message and send a funding of
 ### 📝 Summary
 Entrepreneurs can view funding offers sent by investors and take action (Accept / Decline).
 This completes the mock funding deal flow between Investor and Entrepreneur.
+
+------
+## 🔐 Milestone 6
+Security & Access Control
+(In Progress)
+
+ Overview
+Milestone 6 focuses on improving frontend security and access control for the Nexus platform.
+This module enhances the authentication flow with role awareness and additional security layers.
+
+ Implemented Features
+• Role-based Login UI (Investor / Entrepreneur) with separate dashboard redirects
+• Multi-step Login Flow with a mock OTP (2FA) screen for enhanced security
+• Clean, responsive authentication UI using reusable components
+
+
