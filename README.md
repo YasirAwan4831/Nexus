@@ -210,16 +210,16 @@ This completes the mock funding deal flow between Investor and Entrepreneur.
 
 ------
 ## 🔐 Milestone 6
-Security & Access Control
-(In Progress)
+**Security & Access Control
+(Completed)**
 
- Overview
+ ***Overview***<br>
 Milestone 6 focuses on improving frontend security and access control for the Nexus platform.
 This module enhances the authentication flow with role awareness and additional security layers.
 
- Implemented Features
+ ***Implemented Features***<br>
 • Role-based Login UI (Investor / Entrepreneur) with separate dashboard redirects
-• Multi-step Login Flow with a mock OTP (2FA) screen for enhanced security
+• Multi-step Login Flow with a mock **OTP (2FA)** screen for enhanced security
 • Clean, responsive authentication UI using reusable components
 
 
@@ -236,3 +236,10 @@ This module enhances the authentication flow with role awareness and additional 
 
  Module Status
 These updates mark the start of Module 6 and prepare the platform for stronger authentication and access control mechanisms.
+
+![Milestone 6 Completed](https://img.shields.io/badge/Milestone%206-Completed-red?style=for-the-badge) 
+---------------------------------
+
+
+![Milestone 7](https://img.shields.io/badge/Milestone%207-STARTED-blue?style=flat-square)
+
