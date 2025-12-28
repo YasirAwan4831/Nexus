@@ -9,31 +9,38 @@ const transactions = [
     id: 1,
     title: 'Investment Received',
     amount: '+ $50,000',
-    date: '2024-02-20',
+    date: '2025-12-20',
     type: 'income',
     status: 'Completed',
+    sender: 'Michael Rodriguez',
+    receiver: 'TechWave AI',
   },
   {
     id: 2,
     title: 'Platform Fee',
     amount: '- $1,200',
-    date: '2024-02-18',
+    date: '2025-12-18',
     type: 'expense',
     status: 'Completed',
+    sender: 'TechWave AI',
+    receiver: 'Payment Gateway',
   },
   {
     id: 3,
     title: 'Pending Payout',
     amount: '+ $10,000',
-    date: '2024-02-16',
+    date: '2025-12-16',
     type: 'income',
     status: 'Pending',
+    sender: 'Investor Group',
+    receiver: 'TechWave AI',
   },
 ];
 
 export const PaymentsPage: React.FC = () => {
   return (
     <div className="space-y-6 animate-fade-in">
+      {/* Header */}
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">Payments</h1>
@@ -79,31 +86,21 @@ export const PaymentsPage: React.FC = () => {
       </div>
 
       {/* Payment Actions */}
-<Card>
-  <CardHeader>
-    <h2 className="text-lg font-medium text-gray-900">Quick Actions</h2>
-  </CardHeader>
-  <CardBody>
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      <Button variant="primary">
-        Deposit
-      </Button>
-
-      <Button variant="outline">
-        Withdraw
-      </Button>
-
-      <Button variant="outline">
-        Transfer
-      </Button>
-    </div>
-
-    <p className="mt-4 text-sm text-gray-500">
-      * This is a mock payment system for demonstration purposes only.
-    </p>
-  </CardBody>
-</Card>
-
+      <Card>
+        <CardHeader>
+          <h2 className="text-lg font-medium text-gray-900">Quick Actions</h2>
+        </CardHeader>
+        <CardBody>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Button variant="primary">Deposit</Button>
+            <Button variant="outline">Withdraw</Button>
+            <Button variant="outline">Transfer</Button>
+          </div>
+          <p className="mt-4 text-sm text-gray-500">
+            * This is a mock payment system for demonstration purposes only.
+          </p>
+        </CardBody>
+      </Card>
 
       {/* Transactions */}
       <Card>
@@ -119,14 +116,15 @@ export const PaymentsPage: React.FC = () => {
               <div>
                 <p className="font-medium text-gray-900">{tx.title}</p>
                 <p className="text-sm text-gray-500">{tx.date}</p>
+                <p className="text-sm text-gray-500">
+                  From <span className="font-medium">{tx.sender}</span> → {tx.receiver}
+                </p>
               </div>
 
               <div className="text-right">
                 <p
                   className={`font-semibold ${
-                    tx.type === 'income'
-                      ? 'text-success-600'
-                      : 'text-error-600'
+                    tx.type === 'income' ? 'text-success-600' : 'text-error-600'
                   }`}
                 >
                   {tx.amount}
@@ -142,5 +140,3 @@ export const PaymentsPage: React.FC = () => {
     </div>
   );
 };
-
-
