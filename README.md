@@ -223,3 +223,16 @@ This module enhances the authentication flow with role awareness and additional 
 • Clean, responsive authentication UI using reusable components
 
 
+### 📸 Screenshots
+* • Login Page (Role Selection)
+![Login Page (Role Selection) UI](./screeenshort/login-p-role.png/)
+
+* • OTP Verification Screen* 
+![OTP Verification Screen UI](./screeenshort/otp-page.png)
+
+• Successful Redirect to Role-based Dashboard
+![Successful Redirect to Role-based Dashboard UI](./screeenshort/deshbore101.png)
+
+
+ Module Status
+These updates mark the start of Module 6 and prepare the platform for stronger authentication and access control mechanisms.
