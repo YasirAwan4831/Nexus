@@ -22,3 +22,30 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+
+
+
+
+
+## Screenshots Section
+### Dashboard Layout (Full Sidebar View)
+![Dashboard Sidebar](screeenshort/sidebar-yasir.png)
+
+This screenshot shows the complete dashboard sidebar with role-based navigation, including Payments, Security & Access and Platform Demo modules.
+
+### Entrepreneur Panel dashbord
+![Entrepreneur Dashboard](screeenshort/yasir001.png)
+
+This view highlights the Entrepreneur dashboard with startup management, investor discovery, payment and document access.
+
+
+### Investor Panel View (Deals Included)
+![Entrepreneur Dashboard](screeenshort/dashbord0011.png)
+This screenshot demonstrates the Investor dashboard, including portfolio access, startup discovery, payments and the Deals module.
+
+### Security & Access Control
+![Security Module](screeenshort/Security.png)
+
+This screen represents the Security & Access module featuring password strength indicators, access-related settings, and role-based UI control.
+

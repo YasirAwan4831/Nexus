@@ -237,9 +237,18 @@ This module enhances the authentication flow with role awareness and additional 
  Module Status
 These updates mark the start of Module 6 and prepare the platform for stronger authentication and access control mechanisms.
 
-![Milestone 6 Completed](https://img.shields.io/badge/Milestone%206-Completed-red?style=for-the-badge) 
+![Milestone 6 Completed](https://img.shields.io/badge/Milestone06-Completed-red?style=for-the-badge) 
 ---------------------------------
 
 
 ![Milestone 7](https://img.shields.io/badge/Milestone%207-STARTED-blue?style=flat-square)
+## Milestone 7: Integration & Demo Preparation
 
+In this milestone, we focused on integrating all newly developed modules into the main application flow. 
+All major features such as Payments, Security & Access Control, and role-based dashboards are now accessible directly from the sidebar navigation.
+
+The application layout ensures clear separation between Entrepreneur and Investor panels, improving usability and navigation clarity.
+Basic responsive checks were performed to ensure proper layout on different screen sizes.
+
+This milestone also prepares the platform for final demo and walkthrough by adding a dedicated Platform Demo entry.
+Screenshots below demonstrate successful integration of modules and navigation flow.
