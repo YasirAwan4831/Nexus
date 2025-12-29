@@ -275,3 +275,4 @@ This screenshot demonstrates the Investor dashboard, including portfolio access,
 
 This screen represents the Security & Access module featuring password strength indicators, access-related settings, and role-based UI control.
 
+
