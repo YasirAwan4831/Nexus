@@ -335,3 +335,38 @@ This guided walkthrough enhances the user experience and helps new users underst
 
 ---
 
+### Implementation Notes
+- Walkthrough is UI-only with no backend impact
+- Designed for demos and first-time user onboarding
+- Built using React Joyride for smooth step-by-step guidance
+
+![Milestone 7 Status](https://img.shields.io/badge/Milestone%207-IN%20PROGRESS-blue?style=flat-square)
+
+---
+
+## 🛠️ Technical Stack
+- **Frontend:** React.js, Tailwind CSS
+- **Routing:** React Router
+- **Calendar:** FullCalendar
+- **Tour Guide:** React Joyride
+- **Icons:** Lucide React / Heroicons
+- **Build Tool:** Vite
+
+---
+
+## 📁 Installation & Setup
+```bash
+# Clone the repository
+git clone https://github.com/your-username/nexus-platform.git
+
+# Navigate to project directory
+cd nexus-platform
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+--------
+
+
