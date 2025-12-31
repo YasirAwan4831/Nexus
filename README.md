@@ -340,7 +340,49 @@ This guided walkthrough enhances the user experience and helps new users underst
 - Designed for demos and first-time user onboarding
 - Built using React Joyride for smooth step-by-step guidance
 
+---
 ![Milestone 7 Status](https://img.shields.io/badge/Milestone%207-IN%20PROGRESS-blue?style=flat-square)
+
+###  Milestone 7: Integration & Demo Preparation
+
+###  Overview
+
+Milestone 7 focuses on **final integration, testing, and demo preparation** of the Business Nexus frontend project. At this stage, all major UI modules are connected, walkthrough guidance is implemented, and the project is ready for presentation and evaluation.
+
+---
+
+###  What Was Completed
+
+* All modules are now accessible through **main navigation & sidebar**
+* **Role-based UI navigation** verified (Investor / Entrepreneur)
+* **Responsive testing** across desktop and tablet views
+* **Guided walkthrough** implemented using React Joyride
+* Demo video recorded and published
+
+---
+
+###  Guided Walkthrough (React Joyride)
+
+The walkthrough helps first-time users understand the dashboard layout:
+
+1. Welcome popup on dashboard load
+2. Sidebar navigation highlighted
+3. Navbar actions (profile, notifications)
+4. Main content area explanation
+
+This improves usability and gives a professional onboarding experience.
+
+---
+
+###  Demo & Live Preview
+
+* ▶️ **YouTube Demo Video:** *[YouTube  Video  link](https://youtu.be/WzJRw8mMFSk?si=AoCAHBS4iX0bNuTi)*
+* 💼 **LinkedIn Demo Post:** *[LinkedIn Demo Post](https://www.linkedin.com/posts/yasirawan4831_frontenddevelopment-reactjs-typescript-activity-7412131972237496320-vBpq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFyt-1EB5XKMOcxukQpAzVmx6pIKiXdCz64)*
+* 🌐 **Live Deployment (Vercel):** *Coming Soon*
+
+---
+
+
 
 ---
 
@@ -367,6 +409,43 @@ npm install
 
 # Start development server
 npm run dev
+```
 --------
 
 
+### 📊 Project Status
+
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen.svg)
+![Progress](https://img.shields.io/badge/Progress-98%25-success.svg)
+![Frontend](https://img.shields.io/badge/Type-Frontend%20Project-blue.svg)
+
+
+The project is **98%+ complete**, with all planned frontend milestones successfully delivered.
+
+---
+
+###  Acknowledgements
+
+Special thanks to:
+
+*Special thanks to **Developer Hub Corporation** for learning support and guidance.
+
+---
+
+### 📄 License
+
+This project is licensed under the **MIT License**.
+
+🔗 *License details will be added here.*
+
+
+## Author
+Muhhammad Yasir 
+![GitHub](https://img.shields.io/badge/GitHub-YasirAwan4831-black?logo=github)
+![LinkedIn](https://img.shields.io/badge/LinkedIn-Muhammad%20Yasir-blue?logo=linkedin)
+![Email](https://img.shields.io/badge/Email-Contact%20Me-red?logo=gmail)
+
+**Muhammad Yasir** <br>
+GitHub: [https://github.com/YasirAwan4831](https://github.com/YasirAwan4831) <br>
+LinkedIn: https://www.linkedin.com/in/yasirawan4831/ <br>
+Email: [my3154831409@gmail.com](mailto:my3154831409@gmail.com)
