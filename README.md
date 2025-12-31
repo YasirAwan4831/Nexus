@@ -347,7 +347,7 @@ This guided walkthrough enhances the user experience and helps new users underst
 
 ###  Overview
 
-Milestone 7 focuses on **final integration, testing, and demo preparation** of the Business Nexus frontend project. At this stage, all major UI modules are connected, walkthrough guidance is implemented, and the project is ready for presentation and evaluation.
+Milestone 7 focuses on **final integration, testing, and demo preparation** of the Business Nexus frontend project. At this stage, all major UI modules are connected, walkthrough guidance is implemented and the project is ready for presentation and evaluation.
 
 ---
 
@@ -378,7 +378,7 @@ This improves usability and gives a professional onboarding experience.
 
 * ▶️ **YouTube Demo Video:** *[YouTube  Video  link](https://youtu.be/WzJRw8mMFSk?si=AoCAHBS4iX0bNuTi)*
 * 💼 **LinkedIn Demo Post:** *[LinkedIn Demo Post](https://www.linkedin.com/posts/yasirawan4831_frontenddevelopment-reactjs-typescript-activity-7412131972237496320-vBpq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFyt-1EB5XKMOcxukQpAzVmx6pIKiXdCz64)*
-* 🌐 **Live Deployment (Vercel):** *Coming Soon*
+* 🌐 **Live Deployment (Vercel):** *[Live Link](https://yasirawan.vercel.app/login)*
 
 ---
 
